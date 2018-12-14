@@ -1,6 +1,5 @@
 pipeline {
     agent {
-       label 'jenkins-builder'
         docker {
             image 'maven:3.5.3' 
             args '-v /root/.m2:/root/.m2' 
